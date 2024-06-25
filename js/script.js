@@ -23,7 +23,7 @@ if(perc_sconto != 0) {
     prezzo_finale = prezzo - perc_sconto;
     console.log(prezzo_finale);
 }
-else{
-    console.log(prezzo_finale);
-}
 
+// PREZZO DEL BIGLIETTO 
+prezzo_finale = prezzo_finale.toFixed(2);
+console.log(prezzo_finale);
