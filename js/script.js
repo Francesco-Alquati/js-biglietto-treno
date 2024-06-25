@@ -4,7 +4,6 @@ let eta = prompt('Quanti anni hai?');
 
 // CALCOLO DEL PREZZO AL KM 
 let prezzo = (km * 0.21);
-console.log(prezzo);
 
 // CALCOLO DELLO SCONTO PER FASCE DI ETà
 let perc_sconto = 0;
@@ -15,15 +14,13 @@ if (eta < 18) {
 else if (eta > 65) {
     perc_sconto = ((40 *  prezzo) / 100);
 }
-console.log(perc_sconto);
 
 // CALCOLO IL PREZZO DEL BIGLIETTO FINALE CON O SENZA SCONTO
 let prezzo_finale = prezzo;
 if(perc_sconto != 0) {
     prezzo_finale = prezzo - perc_sconto;
-    console.log(prezzo_finale);
 }
 
 // PREZZO DEL BIGLIETTO 
-prezzo_finale = prezzo_finale.toFixed(2);
+prezzo_finale = `Prezzo del biglietto : ` + prezzo_finale.toFixed(2) + `€`;
 console.log(prezzo_finale);
