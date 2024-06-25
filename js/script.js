@@ -17,9 +17,9 @@ else if (eta > 65) {
 
 // CALCOLO IL PREZZO DEL BIGLIETTO FINALE CON O SENZA SCONTO
 let prezzo_finale = prezzo;
-if(perc_sconto != 0) {
-    prezzo_finale = prezzo - perc_sconto;
-}
+
+prezzo_finale = prezzo - perc_sconto;
+
 
 // PREZZO DEL BIGLIETTO 
 prezzo_finale = `Prezzo del biglietto : ` + prezzo_finale.toFixed(2) + `€`;
