@@ -15,4 +15,15 @@ if (eta < 18) {
 else if (eta > 65) {
     perc_sconto = ((40 *  prezzo) / 100);
 }
-console.log(perc_sconto)
+console.log(perc_sconto);
+
+// CALCOLO IL PREZZO DEL BIGLIETTO FINALE CON O SENZA SCONTO
+let prezzo_finale = prezzo;
+if(perc_sconto != 0) {
+    prezzo_finale = prezzo - perc_sconto;
+    console.log(prezzo_finale);
+}
+else{
+    console.log(prezzo_finale);
+}
+
